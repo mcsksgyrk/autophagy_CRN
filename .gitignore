@@ -1,3 +1,4 @@
-dataXu/
-olderVers/
+/dataXu/*
+/olderVers/*
+.DS_store
 *.zip
