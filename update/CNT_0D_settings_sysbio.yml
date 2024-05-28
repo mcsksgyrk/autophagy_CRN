@@ -1,0 +1,50 @@
+#######################################################################
+#                          General settings                           #
+#######################################################################
+
+# The following settings are read by Optima++ and will be applied
+# to each simulation corresponding to this settings tag
+
+# absolute tolerance
+# optional
+# default 1e-15
+absoluteTolerance: 1e-15
+
+# Relative tolerance
+# optional
+# default 1e-9
+relativeTolerance: 1e-12
+
+
+reactorType: isothermal
+
+#######################################################################
+#                Experiment specific settings for PSR                 #
+#######################################################################
+
+# The following settings/parameters are used by 
+# CanteraPerfectlyStirredReactor.py
+# code, but they are overwritten by Optima++ based on the 
+# content of the RKD formad XML file to be simulated.
+#
+# Path to the mechanism file in yaml format.
+# mechanismFile: chem.yaml
+#
+# The pressure of the perfectly stirred reactor
+# pressure: 100000.0 # Pa
+#
+# The initial temperature of the perfectly stirred reactor
+# temperature: 600 # K
+#
+# The residence time of the perfectly stirred reactor.
+# residenceTime: 10 # s
+#
+# The volume of the perfectly stirred reactor.
+# volume: 0.0001 # m3
+# 
+# Initial mixture composition mole fraction map
+# Type: string:floating-point map
+# initial_comp: {
+# N2: 3.76,
+# O2: 1.0
+# }

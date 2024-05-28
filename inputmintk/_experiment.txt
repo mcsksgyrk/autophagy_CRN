@@ -1,0 +1,23 @@
+Common experimental conditions:
+Label: T  Name: temperature  Source_type: reported  Unit: K    Value: 293 
+Label: P  Name: pressure     Source_type: reported  Unit: atm  Value: 1
+
+{%- for key,value in prs.items() %}
+Name: concentration  Species: {{pr.key}}   Chemical_name: kinase  Unit: mol/cm3 Value: {{pr.value}} ID: {{pr.key}}  Source_type: digitized 
+{%- end for %}
+
+Varied experimental conditions and measured results:
+dataGroupID: dg1 
+
+Name: time  Label: t  Unit: s  ID: time  Source_type: calculated 
+
+{%- for measurement in measurements %}
+Name: concentration                ID: {{measurement}}   Label: {{measurement}}  Source_type: digitized Unit: mol/cm3 Species: {{measurement}}   Chemical_name: kinase 
+{%- end for %}
+{%- for std in std %}
+Name: evaluated standard deviation ID: s{{std}}  Label: s{{std}}  Source_type: reported  Unit: mol/cm3 Reference: concentration Kind: absolute Sigmarange: 1 Method: reported uncertainty Species: {{std}}  Chemical_name: kinase 
+{%- end for %}
+
+
+Varied values:
+{{table}}

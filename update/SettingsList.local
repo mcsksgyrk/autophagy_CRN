@@ -1,0 +1,179 @@
+! List of settings to be loaded during initialization
+!
+! Valid solver types: CKII, FM, OS, ZRK, cantera
+! -------------------------------------
+! CKII    | Chemkin-II
+! FM      | FlameMaster [https://www.itv.rwth-aachen.de/downloads/flamemaster/]
+! OS      | OpenSMOKE++ [https://www.opensmokepp.polimi.it/]
+! ZRK     | zero-rk     [https://github.com/LLNL/zero-rk] (For one-dimensional, laminar flames only)
+! cantera | Cantera     [https://cantera.org/]
+! ===============================================================================================
+!
+! Valid experiment types: ignition, ignition_VTIM, conc_prof, outlet_conc, psr, burning_velocity
+!
+! The "default" id is the one that will be used in all cases if it exist, at least in the current version
+! NOTE: flames still use the hardcoded settings with FM. OS is OK.
+
+! FM settings
+settings/FM_0D_settings               default           FM   ignition
+settings/FM_0D_settings               default           FM   conc_prof
+settings/FM_0D_settings               default           FM   outlet_conc
+settings/FM_0D_VTIM_settings          default           FM   ignition_VTIM
+settings/FM_PSR_settings              default           FM   psr
+settings/FM_Flame_settings_strict     default_strict    FM   burning_velocity
+settings/FM_Flame_settings_stepping   default_stepping  FM   burning_velocity
+
+! CKII settings
+settings/CKII_0D_settings             default           CKII ignition
+settings/CKII_0D_settings             default           CKII conc_prof
+settings/CKII_0D_settings             default           CKII outlet_conc
+settings/CKII_0D_VTIM_settings        default           CKII ignition_VTIM
+settings/CKII_PSR_settings            default           CKII psr
+settings/CKII_flame_settings          default           CKII burning_velocity
+
+! OS settings
+settings/OS_PSR_settings              default           OS   psr
+settings/OS_0D_settings_IDT           default           OS   ignition
+settings/OS_0D_settings_IDT_loose     loose             OS   ignition
+settings/OS_0D_settings               default           OS   conc_prof
+settings/OS_0D_systems_biology        systems_biology    OS   conc_prof
+settings/OS_flow_settings             default           OS   outlet_conc
+settings/OS_0D_VTIM_settings          default           OS   ignition_VTIM
+settings/OS_flame_settings            default           OS   burning_velocity
+settings/OS_flame_settings_zrk        from_zrk          OS   burning_velocity
+settings/OS_flame_CH4_x1              CH4_x1            OS  burning_velocity
+settings/OS_flame_NH3_x1              NH3_x1            OS  burning_velocity
+settings/OS_flame_NH3_x2              NH3_x2            OS  burning_velocity
+settings/OS_flame_NH3_x4              NH3_x4            OS  burning_velocity
+settings/OS_flame_NH3_x6              NH3_x6            OS  burning_velocity
+
+
+
+! OS settings strict version
+settings/OS_PSR_settings_strict_g              strict           OS   psr
+settings/OS_0D_settings_IDT_strict_g           strict           OS   ignition
+settings/OS_0D_settings_strict_g               strict           OS   conc_prof
+settings/OS_flow_settings_strict_g             strict           OS   outlet_conc
+settings/OS_0D_VTIM_settings_strict_g          strict           OS   ignition_VTIM
+
+! Zero-RK settings
+! settings file                                Settings name        Solver            Experiment type 
+settings/ZRK_PSR_settings_C2H4_1.yml           C2H4_1               ZRK               psr
+settings/ZRK_PSR_settings_C2H4_2.yml           C2H4_2               ZRK               psr
+settings/ZRK_PSR_settings.yml                  default              ZRK               psr
+settings/ZRK_PSR_settings1E3.yml               C5H12_1              ZRK               psr
+settings/ZRK_PSR_settings2E3.yml               C5H12_2              ZRK               psr
+settings/ZRK_PSR_settings1E3x.yml              C5H12_3              ZRK               psr
+settings/ZRK_PSR_settings1E3y.yml              C5H12_4              ZRK               psr
+settings/ZRK_PSR_settings2E3z.yml              C5H12_5              ZRK               psr
+
+
+settings/ZRK_flow_settings.yml                 default              ZRK               outlet_conc
+settings/ZRK_flow_settings_1.yml               C2H4_1               ZRK               outlet_conc
+settings/ZRK_flow_settings_x1.yml              FR_x1                ZRK               outlet_conc
+settings/ZRK_0D_settings.yml                   default              ZRK               conc_prof
+settings/ZRK_0D_systems_biology.yml            systems_biology      ZRK               conc_prof
+settings/ZRK_IDT_settings.yml                  default              ZRK               ignition
+settings/ZRK_IDT_settings_x2-3_y5-2_z5-2.yml   x2-3y5-2z5-2         ZRK               ignition    
+settings/ZRK_IDT_settings_x1-3_y5-2_z5-2.yml   x1-3y5-2z5-2         ZRK               ignition    
+settings/ZRK_IDT_settings_x4-4_y5-2_z5-2.yml   x4-4y5-2z5-2         ZRK               ignition    
+settings/ZRK_IDT_settings_x2-3_y1-2_z5-2.yml   x2-3y1-2z5-2         ZRK               ignition    
+settings/ZRK_IDT_settings_x2-3_y5-2_z1-2.yml   x2-3y5-2z1-2         ZRK               ignition    
+settings/ZRK_IDT_settings_x1-5_y1-5_z1-5.yml   x1-5y1-5z1-5         ZRK               ignition    
+settings/ZRK_IDT_settings_x1-5_y1-5_z1-5_a25_r13.yml x1-5y1-5z1-5a25r13 ZRK               ignition    
+settings/ZRK_IDT_settings_x1-5_y1-5_z1-5_a20_r10.yml x1-5y1-5z1-5a20r10 ZRK               ignition    
+settings/ZRK_IDT_settings_5000.yml              p5000                   ZRK               ignition   
+settings/ZRK_IDT_settings_10000.yml            p10000                   ZRK               ignition   
+settings/ZRK_IDT_settings_20000.yml            p20000                   ZRK               ignition   
+settings/ZRK_IDT_settings_10000.yml            C5H12_1                  ZRK               ignition   
+settings/ZRK_IDT_settings_10000.yml            C2H4_1                   ZRK               ignition   
+settings/ZRK_IDT_settings_20000.yml            C2H4_2                   ZRK               ignition   
+
+settings/ZRK_RCM_settings.yml                  C5H12_1              ZRK               ignition_VTIM
+settings/ZRK_RCM_settings.yml                  default              ZRK               ignition_VTIM
+settings/ZRK_unsteady_flame_settings.yml       default              ZRK               burning_velocity
+settings/ZRK_unsteady_flame_settings.yml       default_unsteady     ZRK               burning_velocity
+settings/ZRK_steady_flame_settings.yml         default_steady       ZRK               burning_velocity
+
+settings/ZRK_unsteady_flame_fix.yml            CH4_x1_unsteady      ZRK               burning_velocity
+settings/ZRK_steady_flame_fix.yml              CH4_x1      ZRK               burning_velocity
+settings/ZRK_steady_flame_settings_fix.yml     CH4_x1           ZRK               burning_velocity
+
+! Cantera settings
+! settings file                                Settings name    Solver            Experiment type 
+settings/CNT_PSR_settings.yml                  default          cantera           psr
+settings/CNT_PSR_settings_a15r09.yml           loose            cantera           psr
+settings/CNT_PSR_settings_a10r04.yml           a10r04           cantera           psr
+settings/CNT_PSR_settings_a10r05.yml           a10r05           cantera           psr
+settings/CNT_PSR_settings_a12r05.yml           a12r05           cantera           psr
+settings/CNT_PSR_settings_a12r07.yml           a12r07           cantera           psr
+settings/CNT_PSR_settings_a12r09.yml           a12r09           cantera           psr
+settings/CNT_PSR_settings_a15r04.yml           a15r04           cantera           psr
+settings/CNT_PSR_settings_a15r05.yml           a15r05           cantera           psr
+settings/CNT_PSR_settings_a15r07.yml           a15r07           cantera           psr
+settings/CNT_PSR_settings_a15r09.yml           loose            cantera           psr
+settings/CNT_PSR_settings_a15r09.yml           a15r09           cantera           psr
+settings/CNT_PSR_settings_a15r12.yml           a15r12           cantera           psr
+
+settings/CNT_flow_settings.yml                 default          cantera           outlet_conc
+settings/CNT_flow_settings_sysbio.yml          systems_biology  cantera           outlet_conc
+
+settings/CNT_0D_settings.yml                   default          cantera           conc_prof
+settings/CNT_0D_settings_sysbio.yml            systems_biology  cantera           conc_prof
+
+settings/CNT_IDT_settings.yml                  default          cantera           ignition
+settings/CNT_IDT_settings_a12r06.yml           loose            cantera           ignition
+settings/CNT_IDT_settings_a10r05.yml           loose2           cantera           ignition
+
+settings/CNT_IDT_settings_a10r04.yml           a10r04           cantera           ignition
+settings/CNT_IDT_settings_a10r05.yml           a10r05           cantera           ignition
+settings/CNT_IDT_settings_a11r06.yml           a11r06           cantera           ignition
+settings/CNT_IDT_settings_a12r05.yml           a12r05           cantera           ignition
+settings/CNT_IDT_settings_a12r06.yml           a12r06           cantera           ignition
+settings/CNT_IDT_settings_a12r07.yml           a12r07           cantera           ignition
+settings/CNT_IDT_settings_a12r09.yml           a12r09           cantera           ignition
+settings/CNT_IDT_settings_a15r04.yml           a15r04           cantera           ignition
+settings/CNT_IDT_settings_a15r05.yml           a15r05           cantera           ignition
+settings/CNT_IDT_settings_a15r09.yml           a15r09           cantera           ignition
+settings/CNT_IDT_settings_a15r12.yml           a15r12           cantera           ignition
+
+settings/CNT_RCM_settings.yml                  default          cantera           ignition_VTIM
+settings/CNT_RCM_settings_a12r07.yml           loose            cantera           ignition_VTIM
+settings/CNT_RCM_settings_a10r04.yml           a10r04           cantera           ignition_VTIM 
+settings/CNT_RCM_settings_a10r05.yml           a10r05           cantera           ignition_VTIM 
+settings/CNT_RCM_settings_a12r05.yml           a12r05           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a12r07.yml           a12r07           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a12r09.yml           a12r09           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a15r04.yml           a15r04           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a15r05.yml           a15r05           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a15r07.yml           a15r07           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a15r09.yml           a15r09           cantera           ignition_VTIM    
+settings/CNT_RCM_settings_a15r12.yml           a15r12           cantera           ignition_VTIM    
+
+
+
+settings/CNT_flame_CH4_x1.yml                  CH4_x1           cantera           burning_velocity
+settings/CNT_flame_NH3_x1.yml                  NH3_x1           cantera           burning_velocity
+settings/CNT_flame_NH3_x2.yml                  NH3_x2           cantera           burning_velocity
+settings/CNT_flame_NH3_x2_rad.yml              NH3_x2_rad       cantera           burning_velocity
+settings/CNT_flame_NH3_x4.yml                  NH3_x4           cantera           burning_velocity
+settings/CNT_flame_NH3_x4_rad.yml              NH3_x4_rad       cantera           burning_velocity
+settings/CNT_flame_NH3_x6.yml                  NH3_x6           cantera           burning_velocity
+settings/CNT_flame_NH3_x6_rad.yml              NH3_x6_rad       cantera           burning_velocity
+
+settings/CNT_flame_settings.yml                default          cantera           burning_velocity
+settings/CNT_flame_settings_dense_x2.yml       dense_2x         cantera           burning_velocity
+settings/CNT_flame_settings_dense_x4.yml       dense_4x         cantera           burning_velocity
+settings/CNT_flame_settings_dense_x6.yml       dense_6x         cantera           burning_velocity
+settings/CNT_burner_settings.yml               default          cantera           burner
+settings/CNT_burner_NH3_x1.yml                 NH3_x1           cantera           burner
+settings/CNT_burner_NH3_x6.yml                 NH3_x6           cantera           burner
+settings/CNT_burner_NH3_x2_rad.yml             NH3_x2_rad       cantera           burner
+settings/CNT_burner_NH3_x4_rad.yml             NH3_x4_rad       cantera           burner
+settings/CNT_burner_NH3_x6_rad.yml             NH3_x6_rad       cantera           burner
+
+
+settings/CNT_burner_settings_dense_x1.yml      dense_1x         cantera           burner
+settings/CNT_burner_settings_dense_x2.yml      dense_2x         cantera           burner
+settings/CNT_burner_settings_dense_x4.yml      dense_4x         cantera           burner
+settings/CNT_burner_settings_dense_x6.yml      dense_6x         cantera           burner

@@ -1,0 +1,177 @@
+File author:           Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+File version: 2.1
+Specification version: 2.2
+File DOI: 10.24388/x30000014
+
+Reference description:  Mueller, M.A., Kim, T.J., Yetter, R.A., Dryer, F.L., Int. J. Chem. Kinet., (31), 113-125, 1999.
+Reference DOI:          10.1002/(SICI)1097-4601(1999)31:2&lt;113::AID-KIN5&gt;3.0.CO;2-0
+Reference location:     Main article
+Reference table:        Appendix
+Reference figure:       Fig. 8
+Reference document author: M. A. Mueller and T. J. Kim and R. A. Yetter and F. L. Dryer
+Reference document journal: International Journal of Chemical Kinetics
+Reference document number: 2
+Reference document pages: 113--125
+Reference document publisher: Wiley
+Reference document title: Flow reactor studies and kinetic modeling of the H2/O2 reaction
+Reference document volume: 31
+Reference document year: 1999
+
+Experiment type: concentration time profile measurement
+Apparatus: flow reactor
+
+Common experimental conditions:
+Label: T  Name: temperature  Source_type: reported  Unit: K    Value: 293
+Label: P  Name: pressure     Source_type: reported  Unit: atm  Value: 1
+
+{%- for specie in species %}
+Name: composition  Species: {{species}}  Source_type: reported  Unit: mole fracion  Value: {{value}}  Chemical_name: {{name}}
+{%- end for %}
+
+Varied experimental conditions and measured results:
+dataGroupID: dg1
+Name: time  Label: t  Unit: s  ID: x1  Source_type: digitized
+{%- for specie in species %}
+Name: composition  Species: H2   Chemical_name: hydrogen  Unit: mole fraction  ID: {{id}}  Source_type: digitized
+{%- end for %}
+
+Varied values:
+x1             x2             x3             x4             x5
+AMPK+nS=>AMPKa+nS 2.7333333333333334 0. 0.
+AMPKa=>AMPK 0.000265 0. 0.
+AMPKa+mTORa=>AMPKa+mTOR 2.7833333333333337 0. 0.
+AMPKa+mTORa_ULKa=>AMPKa+mTOR+ULKa 2.833333333333334 0. 0.
+mTORa=>mTOR 0.00028033333333333333 0. 0.
+ULK+mTORa=mTORa_ULK 2.65 0. 0.
+REV  / 280 0 0 /
+ULKa+mTORa=mTORa_ULK 2.6333333333333333 0. 0.
+REV  / 275 0 0 /
+AMPKa+ULK=>AMPKa+ULKa 2.766666666666667 0. 0.
+ULKa+REF1MOLPCM3=>ULKa+phag 0.0002733333333333334 0. 0.  ! fictive species with 1mol/cm3 concentration - will change only negligibly
+AMPKa+TSC=>AMPKa+TSCa 2.8500000000000005 0. 0.
+AKTa+TSCa=>AKTa+TSC 270.0 0. 0.
+!DUP
+RHEBa+TSCa=>RHEB+TSCa 28.16666666666667 0. 0.
+RHEBa+mTOR=>RHEBa+mTORa 2.833333333333334 0. 0.
+RHEB=>RHEBa 0.00025 0. 0.
+ULKa=>ULK 28.16666666666667 0. 0.
+AMPKa+ULKa=>AMPK+ULKa 2.716666666666667 0. 0.
+phag+BEC1=>preAUT+BEC1 0.55 0. 0.
+phag+BEC1_UVG=>preAUT+BEC1_UVG 2.766666666666667 0. 0.
+BEC1+UVG=BEC1_UVG 2.7500000000000004 0. 0.
+REV  / 280 0 0 /
+NO01=>BEC1 3.083333333333333e-06 0. 0.
+BEC1c+REF1MOLPCM3=>cytc+BEC1c 5.833333333333333e-07 0. 0. ! fictive species with 1mol/cm3 concentration - will change only negligibly
+BEC1c=>NO02 0.0013666666666666666 0. 0.
+phag=>NO03 2.8e-05 0. 0.
+ATG5+phag=>ATG5+AUT 276.6666666666667 0. 0.
+AUT=>NO04 0.00027833333333333334 0. 0.
+AUT+nS=>AUT+NO05 0.00028333333333333335 0. 0.
+AUT+nS=>AUT+NO06 0.00028333333333333335 0. 0.
+AUT+eS=>AUT+NO07 283.33333333333337 0. 0.
+NO08=>phag 0.028333333333333335 0. 0.
+eS+PERK=>PERKa+H2O 0.03333333333333333 0. 0.   !fictive water added to cure element balance
+ATF4a=>phag 2.666666666666667e-06 0. 0.
+PERKa+ATF4=>PERK+ATF4a 233.33333333333337 0. 0.
+preAUT=>NO09 2.75e-05 0. 0.
+dS+DAPK=>dS+DAPKa 10.333333333333334 0. 0.
+DAPKa=>DAPK 0.00029666666666666665 0. 0.
+EPACa+PLCe=>EPACa+PLCea 253.33333333333334 0. 0.
+PLCea=>PLCe 3.2166666666666666e-06 0. 0.
+PLCea+PIP2=>PLCea+IP3 333.33333333333337 0. 0.
+Ca2er+IP3R_IP3=>Ca2ic+IP3R_IP3 265.00000000000006 0. 0.
+Ca2ic+SERCA=>Ca2er+SERCA 10.333333333333334 0. 0.
+Ca2ic+Bax=>Ca2ic+Baxa 2.5 0. 0.
+IP3R+IP3=IP3R_IP3 2.816666666666667 0. 0.
+REV  / 256.6666667 0 0 /
+IP3=>IP2 0.00028333333333333335 0. 0.
+IP2=>IP 0.00028333333333333335 0. 0.
+IP=>Ins 0.00028333333333333335 0. 0.
+Ins=>PIP2 0.00028333333333333335 0. 0.
+IP3R_IP3+phag=>IP3R_IP3+H2O 2.3333333333333335 0. 0.  !fictive water added to cure element balance
+Ca2ic+CaMKKb=>Ca2ic+CaMKKba 0.2783333333333333 0. 0.
+CaMKKba+REF1MOLPCM3=>Ca2ic+CaMKKb 0.00027666666666666665 0. 0.  !fictive water added to cure element balance
+AMPK+CaMKKba=>AMPKa+CaMKKba 2.75e-06 0. 0.
+IP3R+BCL2=IP3R_BCL2 2.9499999999999997e-06 0. 0.
+REV  / 253.3333333 0 0 /
+BEC1+BCL2=BEC1_BCL2 2.8333333333333335e-06 0. 0.
+REV  / 256.6666667 0 0 /
+BCL2p=>BCL2 0.00025 0. 0.
+Ca2ic+Calpain=>Ca2ic+Calpaina 3.1333333333333333 0. 0.
+Calpaina=>Calpain 0.0002666666666666667 0. 0.
+Calpaina+Ga=>Gaa+Calpaina 3.216666666666667 0. 0.
+Calpaina+ATG5=>Calpaina+ATG5t 3.333333333333334 0. 0.
+ATG5t+BCL2=ATG5_BCL2 3.166666666666667 0. 0.
+REV  / 0.078333333 0 0 /
+Calpaina+Bid=>Calpaina+tBid 2.8000000000000003 0. 0.
+Calpaina+BEC1=>Calpaina+NO10 0.9333333333333333 0. 0.
+AC_Gaa+REF1MOLPCM3=>AC_Gaa+cAMP 0.0003333333333333333 0. 0. !fictive water added to cure element balance
+cAMP=>NO11 0.0013883333333333332 0. 0.
+cAMP+EPAC=>cAMP+EPACa 3.5000000000000004 0. 0.
+EPACa=>EPAC 313.33333333333337 0. 0.
+Ga=>G 0.00027666666666666665 0. 0.
+AC+Ga=AC_Ga 33.333333333333336 0. 0.
+REV  / 325 0 0 /
+Gabg+GPCRa=>Ga+Gbg+GPCRa 0.00035 0. 0.
+Ga+Gbg=>Gabg 0.5000000000000001 0. 0.
+BCL2+Bax=BCL2_Bax 3.5000000000000004 0. 0.
+REV  / 316.6666667 0 0 /
+Bax+p53m=>Bax*+p53m 2.7783333333333338 0. 0.
+Baxa=>Bax 0.0014 0. 0.
+Bax=>NO12 0.00028333333333333335 0. 0.
+UVG+Bax=UVG_Bax 2.6 0. 0.
+REV  / 25.66666667 0 0 /
+!cytc+caspase=>cytc+caspasea 2.7833333333333337 0. 0.
+!DUP
+Bid+caspasea=>tBid+caspasea 2.7500000000000004 0. 0.
+tBid=>NO13 0.00025499999999999996 0. 0.
+NO14=>Bid 2.5833333333333333e-06 0. 0.
+JNKa+caspase=>JNKa+caspasea 1.1666666666666667 0. 0.
+NO27+dS=>dS+p53c 0.00025 0. 0.
+p53c=>NO14 0.00023333333333333333 0. 0.
+p53c=p53a 0.0002666666666666667 0. 0.
+REV  / 300 0 0 /
+NO15+p53a=>p53a+Mdm2 0.00023666666666666668 0. 0.
+p53c+Mdm2=>p53m+Mdm2 2.6333333333333333 0. 0.
+NO16+p53a=>p53a+Bax 0.0002733333333333334 0. 0.
+p53m+BCL2=p53_BCL2 2.7 0. 0.
+REV  / 0.166666667 0 0 /
+Mdm2=>NO17 0.0003 0. 0.
+NO18+p53a=>p53a+DRAM 0.0003 0. 0.
+DRAM=>NO19 0.00027 0. 0.
+DRAM+preAUT=>DRAM+AUTa 2.766666666666667 0. 0.
+p53c+AMPKa=>p53c+AMPK 2.6166666666666667 0. 0.
+NO20+p53a=>p53a+PUMA 0.00014166666666666668 0. 0.
+PUMA+BCL2=PUMA_BCL2 16.666666666666668 0. 0.
+REV  / 833.3333333 0 0 /
+PUMA=>NO21 0.00012 0. 0.
+NO22+Baxa=>cytc+Baxa 0.000275 0. 0.
+cytc+caspase=>cytc+caspasea 28.333333333333336 0. 0.
+!DUP
+cytc=>NO23 0.00027666666666666665 0. 0.
+mTORa+TFEBi=>mTORa+TFEB 2.833333333333334 0. 0.
+phag+TFEB=>AUT+TFEB 0.02666666666666667 0. 0.
+TFEB=>TFEBi 2.8333333333333335e-06 0. 0.
+Ins+PI3K=>Ins+PI3Ka 400.00000000000006 0. 0.
+PI3Ka=>PI3K 0.00036666666666666667 0. 0.
+AKT+PI3Ka=>AKTa+PI3K 315.00000000000006 0. 0.
+AKTa=>AKT 0.0002933333333333333 0. 0.
+!AKTa+TSCa=>AKTa+TSC 258.33333333333337 0. 0.
+!DUP
+AKTa+mTORa_ULKa=>AKTa+mTOR+ULKa 2.6833333333333336 0. 0.
+JNKa+BCL2=>JNKa+BCL2p 2.866666666666667 0. 0.
+JNKa+BEC1_BCL2=>JNKa+BEC1+BCL2p 2.816666666666667 0. 0.
+DAPKa+BEC1_BCL2=>DAPKa+BEC1+BCL2 516.6666666666667 0. 0.
+eS+JNK=>eS+JNKa 2.6833333333333336 0. 0.
+JNKa=>JNK 0.000265 0. 0.
+nS+MAPK15=>nS+MAPK15a 56.66666666666667 0. 0.
+MAPK15a=>MAPK15 0.00145 0. 0.
+PKA+MAPK15a=>PKAa+MAPK15a 8.666666666666666 0. 0.
+PKAa=>PKA 0.0013 0. 0.
+PKAa+phag=>PKAa+preAUT 0.43333333333333335 0. 0.
+PKAa+preAUT=>PKAa+AUT 0.8833333333333334 0. 0.
+NO24=>ATG5 0.00028333333333333335 0. 0.
+ATG5t=>NO25 0.0002666666666666667 0. 0.
+ATG5=>NO26 2.816666666666667e-05 0. 0.
+
+

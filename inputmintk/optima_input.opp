@@ -1,0 +1,46 @@
+! mechanism to optimized
+MECHMOD   
+  USE_NAME        autophagi
+  MECH_FILE       autophagi.inp
+  COMPILE_CANTERA autophagi.yaml
+END
+ 
+! optimization settings 
+OPTIMIZATION
+    MECHANISM autophagi
+    SOLVER cantera
+    TIME_LIMIT 40
+	
+    THREAD_LIMIT 32
+    SAMPLE_SIZE  32
+	SPLIT 8
+	
+    ITERATION   100
+    SEED 23073123
+    FOCUSLEVEL           40 
+    FOCUS_MIN            20
+    FOCUS_MAX           400
+    FOCUS_BACKSTEP        5
+    FOCUS_FORWARDSTEP     5 
+
+	! kinetic parameters to optimize
+	REACTION
+	  REACNUM     1
+	  REACSTRING  H+O2=OH+O
+	  PARAMETERS  lnA
+
+	  INIT        3.7819313472986245E+01
+	  INIT_COVMAT 
+		5.89099789544516028e-01
+
+	  UNC_MEAN    3.8099822477514735E+01
+	  UNC_COVMAT
+		5.89099789544516028e-01
+	  TEMPRANGE   800 2500
+	  SIGMARANGE  3
+	  UNIFORM
+	END
+
+	! experiments:
+	NAME experiment1.xml POINTS ALL
+END

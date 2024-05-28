@@ -1,0 +1,18 @@
+MECHMOD
+  USE_NAME         mech0_cnt
+  MECH_FILE        5_Bence/mech/mech0_cnt.inp
+  COMPILE_cantera  5_Bence/mech/mech0.yaml
+END
+
+MECHTEST
+    MECHANISM  mech0_cnt
+    TIME_LIMIT 300
+    THREAD_LIMIT 1
+    SETTINGS_TAG systems_biology
+    
+
+    NOCLEANUP
+    SOLVER cantera
+    NAME 5_Bence/xml/data_test1.xml
+    NAME 5_Bence/xml/data_test2.xml
+END

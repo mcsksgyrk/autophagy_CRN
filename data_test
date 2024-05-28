@@ -1,0 +1,134 @@
+Common experimental conditions:
+Label: T  Name: temperature  Source_type: reported  Unit: K    Value: 293 
+Label: P  Name: pressure     Source_type: reported  Unit: atm  Value: 1
+Name: concentration  Species: AMPK   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: AMPK  Source_type: digitized
+Name: concentration  Species: AC   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: AC  Source_type: digitized
+Name: concentration  Species: AKT   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: AKT  Source_type: digitized
+Name: concentration  Species: AKTa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: AKTa  Source_type: digitized
+Name: concentration  Species: ATF4   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: ATF4  Source_type: digitized
+Name: concentration  Species: ATF4a   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: ATF4a  Source_type: digitized
+Name: concentration  Species: ATG5   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: ATG5  Source_type: digitized
+Name: concentration  Species: ATG5t   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: ATG5t  Source_type: digitized
+Name: concentration  Species: AUTa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: AUTa  Source_type: digitized
+Name: concentration  Species: Bax   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Bax  Source_type: digitized
+Name: concentration  Species: Baxa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Baxa  Source_type: digitized
+Name: concentration  Species: BCL2   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: BCL2  Source_type: digitized
+Name: concentration  Species: BCL2p   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: BCL2p  Source_type: digitized
+Name: concentration  Species: BEC1   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: BEC1  Source_type: digitized
+Name: concentration  Species: BEC1c   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: BEC1c  Source_type: digitized
+Name: concentration  Species: Bid   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Bid  Source_type: digitized
+Name: concentration  Species: Ca2er   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Ca2er  Source_type: digitized
+Name: concentration  Species: Ca2ic   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Ca2ic  Source_type: digitized
+Name: concentration  Species: Calpain   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Calpain  Source_type: digitized
+Name: concentration  Species: Calpaina   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Calpaina  Source_type: digitized
+Name: concentration  Species: CaMKKb   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: CaMKKb  Source_type: digitized
+Name: concentration  Species: CaMKKba   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: CaMKKba  Source_type: digitized
+Name: concentration  Species: cAMP   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: cAMP  Source_type: digitized
+Name: concentration  Species: caspase   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: caspase  Source_type: digitized
+Name: concentration  Species: caspasea   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: caspasea  Source_type: digitized
+Name: concentration  Species: cytc   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: cytc  Source_type: digitized
+Name: concentration  Species: DAPK   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: DAPK  Source_type: digitized
+Name: concentration  Species: DAPKa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: DAPKa  Source_type: digitized
+Name: concentration  Species: DRAM   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: DRAM  Source_type: digitized
+Name: concentration  Species: dS   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: dS  Source_type: digitized
+Name: concentration  Species: EPAC   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: EPAC  Source_type: digitized
+Name: concentration  Species: EPACa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: EPACa  Source_type: digitized
+Name: concentration  Species: eS   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: eS  Source_type: digitized
+Name: concentration  Species: G   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: G  Source_type: digitized
+Name: concentration  Species: Ga   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Ga  Source_type: digitized
+Name: concentration  Species: Gaa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Gaa  Source_type: digitized
+Name: concentration  Species: Gabg   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Gabg  Source_type: digitized
+Name: concentration  Species: Gbg   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Gbg  Source_type: digitized
+Name: concentration  Species: GPCRa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: GPCRa  Source_type: digitized
+Name: concentration  Species: Ins   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Ins  Source_type: digitized
+Name: concentration  Species: IP   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: IP  Source_type: digitized
+Name: concentration  Species: IP2   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: IP2  Source_type: digitized
+Name: concentration  Species: IP3   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: IP3  Source_type: digitized
+Name: concentration  Species: IP3R   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: IP3R  Source_type: digitized
+Name: concentration  Species: JNK   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: JNK  Source_type: digitized
+Name: concentration  Species: JNKa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: JNKa  Source_type: digitized
+Name: concentration  Species: MAPK15   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: MAPK15  Source_type: digitized
+Name: concentration  Species: MAPK15a   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: MAPK15a  Source_type: digitized
+Name: concentration  Species: Mdm2   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: Mdm2  Source_type: digitized
+Name: concentration  Species: mTOR   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: mTOR  Source_type: digitized
+Name: concentration  Species: NO01   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO01  Source_type: digitized
+Name: concentration  Species: NO02   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO02  Source_type: digitized
+Name: concentration  Species: NO03   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO03  Source_type: digitized
+Name: concentration  Species: NO04   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO04  Source_type: digitized
+Name: concentration  Species: NO05   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO05  Source_type: digitized
+Name: concentration  Species: NO06   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO06  Source_type: digitized
+Name: concentration  Species: NO07   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO07  Source_type: digitized
+Name: concentration  Species: NO08   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO08  Source_type: digitized
+Name: concentration  Species: NO09   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO09  Source_type: digitized
+Name: concentration  Species: NO10   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO10  Source_type: digitized
+Name: concentration  Species: NO11   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO11  Source_type: digitized
+Name: concentration  Species: NO12   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO12  Source_type: digitized
+Name: concentration  Species: NO13   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO13  Source_type: digitized
+Name: concentration  Species: NO14   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO14  Source_type: digitized
+Name: concentration  Species: NO15   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO15  Source_type: digitized
+Name: concentration  Species: NO16   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO16  Source_type: digitized
+Name: concentration  Species: NO17   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO17  Source_type: digitized
+Name: concentration  Species: NO18   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO18  Source_type: digitized
+Name: concentration  Species: NO19   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO19  Source_type: digitized
+Name: concentration  Species: NO20   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO20  Source_type: digitized
+Name: concentration  Species: NO21   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO21  Source_type: digitized
+Name: concentration  Species: NO22   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO22  Source_type: digitized
+Name: concentration  Species: NO23   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO23  Source_type: digitized
+Name: concentration  Species: NO24   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO24  Source_type: digitized
+Name: concentration  Species: NO25   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO25  Source_type: digitized
+Name: concentration  Species: NO26   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO26  Source_type: digitized
+Name: concentration  Species: NO27   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: NO27  Source_type: digitized
+Name: concentration  Species: nS   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: nS  Source_type: digitized
+Name: concentration  Species: p53   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: p53  Source_type: digitized
+Name: concentration  Species: p53a   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: p53a  Source_type: digitized
+Name: concentration  Species: p53c   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: p53c  Source_type: digitized
+Name: concentration  Species: p53m   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: p53m  Source_type: digitized
+Name: concentration  Species: PERK   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PERK  Source_type: digitized
+Name: concentration  Species: PERKa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PERKa  Source_type: digitized
+Name: concentration  Species: phag   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: phag  Source_type: digitized
+Name: concentration  Species: PI3K   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PI3K  Source_type: digitized
+Name: concentration  Species: PI3Ka   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PI3Ka  Source_type: digitized
+Name: concentration  Species: PIP2   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PIP2  Source_type: digitized
+Name: concentration  Species: PKA   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PKA  Source_type: digitized
+Name: concentration  Species: PKAa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PKAa  Source_type: digitized
+Name: concentration  Species: PLCe   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PLCe  Source_type: digitized
+Name: concentration  Species: PLCea   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PLCea  Source_type: digitized
+Name: concentration  Species: preAUT   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: preAUT  Source_type: digitized
+Name: concentration  Species: PUMA   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: PUMA  Source_type: digitized
+Name: concentration  Species: RHEB   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: RHEB  Source_type: digitized
+Name: concentration  Species: RHEBa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: RHEBa  Source_type: digitized
+Name: concentration  Species: SERCA   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: SERCA  Source_type: digitized
+Name: concentration  Species: tBid   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: tBid  Source_type: digitized
+Name: concentration  Species: TFEB   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: TFEB  Source_type: digitized
+Name: concentration  Species: TFEBi   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: TFEBi  Source_type: digitized
+Name: concentration  Species: TSC   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: TSC  Source_type: digitized
+Name: concentration  Species: TSCa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: TSCa  Source_type: digitized
+Name: concentration  Species: ULKa   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: ULKa  Source_type: digitized
+Name: concentration  Species: UVG   Chemical_name: kinase  Unit: mol/cm3 Value: 1.0 ID: UVG  Source_type: digitized
+
+Varied experimental conditions and measured results:
+dataGroupID: dg1 
+Name: time  Label: t  Unit: min  ID: time  Source_type: calculated 
+
+Name: concentration                ID: mTORa   Label: mTORa  Source_type: digitized Unit: mol/cm3 Species: mTORa   Chemical_name: kinase 
+Name: evaluated standard deviation ID: smTORa  Label: smTORa  Source_type: reported  Unit: mol/cm3 Reference: concentration Kind: absolute Sigmarange: 1 Method: reported uncertainty Species: mTORa  Chemical_name: kinase 
+Name: concentration                ID: ULK   Label: ULK  Source_type: digitized Unit: mol/cm3 Species: ULK   Chemical_name: kinase 
+Name: evaluated standard deviation ID: sULK  Label: sULK  Source_type: reported  Unit: mol/cm3 Reference: concentration Kind: absolute Sigmarange: 1 Method: reported uncertainty Species: ULK  Chemical_name: kinase 
+Name: concentration                ID: AMPKa   Label: AMPKa  Source_type: digitized Unit: mol/cm3 Species: AMPKa   Chemical_name: kinase 
+Name: evaluated standard deviation ID: sAMPKa  Label: sAMPKa  Source_type: reported  Unit: mol/cm3 Reference: concentration Kind: absolute Sigmarange: 1 Method: reported uncertainty Species: AMPKa  Chemical_name: kinase 
+Name: concentration                ID: AUT   Label: AUT  Source_type: digitized Unit: mol/cm3 Species: AUT   Chemical_name: kinase 
+Name: evaluated standard deviation ID: sAUT  Label: sAUT  Source_type: reported  Unit: mol/cm3 Reference: concentration Kind: absolute Sigmarange: 1 Method: reported uncertainty Species: AUT  Chemical_name: kinase 
+
+Varied values:
+t mTORa	        smTORa	    ULK	        sULK	    AMPKa	    sAMPKa	    AUT	        sAUT
+0 1	            0.057708371	1	        0.06659417	1	        0.113762439	1	        0.052919863
+30 0.328824908	0.033738787	0.736130795	0.012741815	5.874494001	0.151931424	2.678453256	0.196272068
+60 0.245583783	0.0124392	0.642196733	0.041460076	12.00608973	0.225558969	2.326520958	0.21323128
+90 0.406145533	0.077622761	0.824566071	0.006662436	9.293454641	0.076389622	1.77141628	0.112561902
+120 0.452013067	0.060164088	0.616804233	0.025687951	6.352155462	0.113317853	2.199335445	0.121303907
+150 0.511601478	0.011503304	0.547645692	0.005493335	6.358520131	0.254350078	2.848776153	0.095341645
+180 0.199496967	0.045938233	0.506191749	0.011392007	9.346884844	0.340815117	2.084090103	0.189995246
+210 0.163379163	0.109206759	0.510822206	0.02937321	9.580699906	1.162044437	1.700446987	0.077889356
+240 0.116531919	0.042836171	0.628275564	0.001210989	11.71887078	0.966047945	3.545101178	0.312004383
+270 0.145393099	0.100218	0.594305875	0.06340267	4.616744267	0.178812298	4.32653867	0.126669768
+300 0.180639585	0.05223528	0.625180698	0.05062999	3.711634044	0.285834693	2.289979681	0.151026932
